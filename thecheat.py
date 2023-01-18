@@ -122,18 +122,18 @@ def main():
     number = 0
     account = 0
 
-    if "Phonenumber" in input_: #입력문자에 Phonenumber이 들어가 있으면
+    if "Phonenumber" in input_: 
         try:
-            ph = input_.split(" ")[1] #폰 넘버 받기
+            ph = input_.split(" ")[1] 
             number = ph
 
             if "-" in number:
                 return input("전화번호 사이 '-' 은 지우고 번호만 입력 해 주세요.")
         except Exception as e:
             return input("Phonenumber <number> 형식으로 적어주세요!")
-    if "Account" in input_: #입력 문자에 Account 가 들어가 있으면
+    if "Account" in input_: 
         try:
-            ac = input_.split(" ")[1] #계좌 입력 받기
+            ac = input_.split(" ")[1]
             account = ac
         except Exception as e:
             return input("Account <Account> 형식으로 적어주세요!")
